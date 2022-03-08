@@ -21,7 +21,6 @@ Product.belongsToMany(Tag, {
     model: ProductTag,
     unique: false,
   },
-
   as: "product_tags",
 });
 
