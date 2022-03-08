@@ -6,7 +6,7 @@ const { Tag, Product, ProductTag } = require("../../models");
 router.get("/", (req, res) => {
   // find all tags
   try {
-    const data = await Category.findAll({
+    const data = await Tag.findAll({
       include: [{ model: Product }],
     });
     res.status(200).json(data);
@@ -17,7 +17,19 @@ router.get("/", (req, res) => {
 
 router.get("/:id", (req, res) => {
   // find a single tag by its `id`
-  // be sure to include its associated Product data
+
+  try {
+    const data = await Tag.findByPk(req.params.id, {
+      include: [{ model: Product }],
+    });
+    if (!data) {
+      res.status(404).json({ message: "No category found with this id!" });
+      return;
+    }
+    res.status(200).json(data);
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 router.post("/", (req, res) => {
@@ -50,21 +62,6 @@ module.exports = router;
 
 const router = require("express").Router();
 const { Category, Product } = require("../../models");
-
-// The `/api/categories` endpoint
-
-router.get("/", async (req, res) => {
-  // find all categories
-
-  try {
-    const data = await Category.findAll({
-      include: [{ model: Product, group: "category_id" }],
-    });
-    res.status(200).json(data);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-});
 
 router.get("/:id", async (req, res) => {
   // find one category by its `id` value
