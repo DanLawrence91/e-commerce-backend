@@ -14,6 +14,8 @@ The project has GET, POST, PUT and DELETE API routes for different categories, p
 
 When the project is running based on the installation above and the server has been started each of the API routes for category, product and tag can be tested for their CRUD operations. I have used INSOMNIA to test them in the walkthrough video below.
 
+![Example of API GET route working in Insomnia](./assets/readme1.png)
+
 ### Routes Available
 
 - Categories
