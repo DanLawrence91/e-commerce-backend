@@ -44,7 +44,7 @@ When the project is running based on the installation above and the server has b
 
 ## Walkthrough Video
 
-Please follow the [link](https://drive.google.com/file/d/1lWieQN_W8pYAPYVhUZ5MjN3uI6sAe-2a/view?usp=sharing) to watch the walkthrough video on how to use this backend
+Please follow the [link](https://drive.google.com/file/d/1aCRBDPBlVdz0JoErIgLr3fVIqbeKIgzw/view?usp=sharing) to watch the walkthrough video on how to use this backend
 
 ## Questions
 
