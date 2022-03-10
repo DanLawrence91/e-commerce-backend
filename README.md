@@ -12,7 +12,7 @@ The project can be installed by cloning the repo from github. Once this is done 
 
 The project has GET, POST, PUT and DELETE API routes for different categories, products and tags in this e-commerce store. They can all be used to carry out their relevant operation to amend or view the data in the database.
 
-When the project is running based on the installation above and the server has been started each of the API routes for category, product and tag can be tested for their CRUD operations. I have used INSOMNIA to test them in the walkthrough video below.
+When the project is running based on the installation above and the server has been started each of the API routes for category, product and tag can be tested for their CRUD operations. I have used INSOMNIA to test them in the walkthrough video below. Please see below for an example of what one of the working API routes looks like in INSOMNIA.
 
 ![Example of API GET route working in Insomnia](./assets/readme1.png)
 
